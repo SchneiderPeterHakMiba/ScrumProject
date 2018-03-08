@@ -1,0 +1,85 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Data;
+using System.Data.OleDb;
+
+namespace Speiseplan
+{
+    class DatabaseAccess
+    {
+        private string cn;
+        private OleDbConnection conn;
+        private OleDbCommand cmd;
+
+        public DatabaseAccess()
+        {
+            //cn = "Provider = Microsoft.ACE.OLEDB.12.0; Data Source = Speisen.accdb";
+            cn = "Provider = Microsoft.JET.OLEDB.4.0; Data Source = Speisen.mdb";
+            conn = new OleDbConnection(cn);
+            conn.Open();
+        }
+
+        public OleDbDataReader readData(string sql)
+        {
+            try
+            {
+                conn.Close();
+                conn.Open();
+                cmd = new OleDbCommand(sql, conn);
+                return cmd.ExecuteReader(CommandBehavior.CloseConnection);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Fehler beim Einlesen " + ex.Message);
+            }
+
+        }
+        public void executeQuery(OleDbCommand cmd)
+        {
+            try
+            {
+                cmd.Connection = conn;
+                conn.Close();
+                conn.Open();
+                cmd.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Fehler beim Ausführen " + ex.Message);
+            }
+        }
+        internal Int64 executeScalar(string sql)
+        {
+            try
+            {
+                conn.Close();
+                conn.Open();
+                cmd = new OleDbCommand(sql, conn);
+                Int64 z = Convert.ToInt64(cmd.ExecuteScalar());
+                return z;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Fehler beim Berechnen der Funktion " + ex.Message);
+            }
+        }
+        internal String executeScalarString(string sql)
+        {
+            try
+            {
+                conn.Close();
+                conn.Open();
+                cmd = new OleDbCommand(sql, conn);
+                String y = Convert.ToString(cmd.ExecuteScalar());
+                return y;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Fehler beim Berechnen der Funktion " + ex.Message);
+            }
+        }
+    }
+}
