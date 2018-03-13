@@ -8,6 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.OleDb;
+using System.IO;
+using iTextSharp.text;
+using iTextSharp.text.pdf;
 
 namespace Speiseplan2
 {
@@ -169,6 +172,52 @@ namespace Speiseplan2
         private void listView2_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            int i = 0;
+            Document doc = new Document(iTextSharp.text.PageSize.LETTER, 10, 10, 42, 35);
+            PdfWriter wri = PdfWriter.GetInstance(doc, new FileStream("Test.pdf", FileMode.Create));
+            doc.Open();
+
+            Paragraph paragraph = new Paragraph("                                   Wochenmenü\n\n");
+            doc.Add(paragraph);
+
+            PdfPTable table = new PdfPTable(2);
+
+            dr = da.readData("Select WID, WSpeise from Wochenplan");
+            while (dr.Read())
+            {
+                if (i == 0)
+                {
+                    table.AddCell("Vorspeise");
+                    table.AddCell(dr[1].ToString());
+                    i++;
+                }
+                if(i==1)
+                {
+                    table.AddCell("Hauptspeise");
+                    table.AddCell(dr[1].ToString());
+                    i++;
+                }
+                if(i==2)
+                {
+                    table.AddCell("Nachspeisee");
+                    table.AddCell(dr[1].ToString());
+                    i = 0;
+                }
+            }           
+            
+
+            doc.Add(table);
+            doc.Close();
+            MessageBox.Show("PDF erfolgreich erstellt");
         }
     }
 }
