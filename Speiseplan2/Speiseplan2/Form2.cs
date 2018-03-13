@@ -17,6 +17,8 @@ namespace Speiseplan2
         private OleDbDataReader dr;
         private OleDbCommand cmd;
         private string sql;
+        public ListViewItem lvItem;
+        private int l;
 
         public Form2()
         {
@@ -65,8 +67,9 @@ namespace Speiseplan2
                     if (f == 1)
                         MessageBox.Show("Speise schon vorhanden");
                     else
-                    {
-                        sql = "Insert into Speisen (Speise, Speisenart) values(?,?);";
+                    { 
+
+                        sql = "Insert into Speisen ( Speise, Speisenart) values(?,?);";
                         cmd = new OleDbCommand();
                         cmd.CommandText = sql;
                         cmd.Parameters.Add(new OleDbParameter("Speise", textBox1.Text));
@@ -77,7 +80,8 @@ namespace Speiseplan2
                         this.Close();
                         Form1.f1.readSpeiseIntoList();
                     }
-                }
+                    }
+                
                 else if (button1.Text.Equals("Bearbeiten"))
                 {
                     string sql = "Update Speisen set Speise=?, Speisenart=? where Speise='" + Form1.f1.listView1.SelectedItems[0].SubItems[0].Text + "';";

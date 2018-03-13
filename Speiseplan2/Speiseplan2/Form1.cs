@@ -33,6 +33,7 @@ namespace Speiseplan2
         private void Form1_Load(object sender, EventArgs e)
         {
             readSpeiseIntoList();
+            readWochenplanIntoList();
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -62,6 +63,16 @@ namespace Speiseplan2
                 lvItem = new ListViewItem(dr[1].ToString());
                 lvItem.SubItems.Add(dr[2].ToString());
                 listView1.Items.Add(lvItem);
+            }
+        }
+        public void readWochenplanIntoList()
+        {
+            listView2.Items.Clear();
+            dr = da.readData("Select WID, WSpeise from Wochenplan");
+            while (dr.Read())
+            {
+                lvItem = new ListViewItem(dr[1].ToString());
+                listView2.Items.Add(lvItem);
             }
         }
 
@@ -115,26 +126,49 @@ namespace Speiseplan2
 
         private void button6_Click(object sender, EventArgs e)
         {
-            int i = 0;
-            while(i<7)
+            cmd = new OleDbCommand();
+                cmd.CommandText = "Delete from Wochenplan";
+                da.executeQuery(cmd);
+            int i = 3;
+            while(i<18)
             {
-                try
-                {
+                string z= "";
+                int p = i % 3;
+                if (p == 0)
+                    z = "Vorspeise";
+                if (p == 1)
+                    z = "Hauptspeise";
+                if (p == 2)
+                    z = "Nachspeise";
+                bool b = true;
+                while(b)
+                    {
+                   
                     Random r = new Random();
-                    int j = r.Next(1, Convert.ToInt32(listView1.Items.Count-1));
-                    string s = listView1.Items[j].SubItems[0].Text;
-                    lvItem2 = new ListViewItem(s);
-                    listView2.Items.Add(lvItem);
+                    int j = r.Next(0, Convert.ToInt32(listView1.Items.Count));
+                    string o = listView1.Items[j].SubItems[0].Text;
+                    //MessageBox.Show(z + " " + listView1.Items[j].SubItems[1].Text + "." + i + " " + j);
+                    if(z.Equals(listView1.Items[j].SubItems[1].Text))
+                    {
+                   
+                        cmd = new OleDbCommand();
+                        cmd.CommandText = "Insert into Wochenplan ( WSpeise) values(?);"; ;
+                        cmd.Parameters.Add(new OleDbParameter("WSpeise", o));
                     
+                        da.executeQuery(cmd);
+                        b = false;
+                    }
+                    }
 
-                }
-                catch(Exception ex)
-                {
-                    MessageBox.Show(ex.Message);
-                }
                 i++;
                 
             }
+            readWochenplanIntoList();
+        }
+
+        private void listView2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
