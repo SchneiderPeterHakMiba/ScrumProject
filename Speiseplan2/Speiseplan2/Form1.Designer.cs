@@ -46,7 +46,6 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.tableLayoutPanel4.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -65,13 +64,12 @@
             this.tableLayoutPanel4.Controls.Add(this.tableLayoutPanel2, 0, 0);
             this.tableLayoutPanel4.Controls.Add(this.tableLayoutPanel5, 1, 0);
             this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(0, 142);
-            this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(0, 115);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 1;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 565F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(1333, 564);
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 458F));
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(1000, 459);
             this.tableLayoutPanel4.TabIndex = 5;
             // 
             // tableLayoutPanel2
@@ -80,12 +78,11 @@
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.Controls.Add(this.listView1, 0, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(4, 4);
-            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(825, 556);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(619, 453);
             this.tableLayoutPanel2.TabIndex = 1;
             // 
             // listView1
@@ -95,10 +92,9 @@
             this.columnHeader2});
             this.listView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.listView1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listView1.Location = new System.Drawing.Point(4, 4);
-            this.listView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.listView1.Location = new System.Drawing.Point(3, 3);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(817, 548);
+            this.listView1.Size = new System.Drawing.Size(613, 447);
             this.listView1.TabIndex = 0;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
@@ -121,13 +117,12 @@
             this.tableLayoutPanel5.Controls.Add(this.tableLayoutPanel3, 0, 0);
             this.tableLayoutPanel5.Controls.Add(this.tableLayoutPanel6, 0, 1);
             this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel5.Location = new System.Drawing.Point(837, 4);
-            this.tableLayoutPanel5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel5.Location = new System.Drawing.Point(628, 3);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
             this.tableLayoutPanel5.RowCount = 2;
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 67F));
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(492, 556);
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(369, 453);
             this.tableLayoutPanel5.TabIndex = 2;
             // 
             // tableLayoutPanel3
@@ -138,12 +133,11 @@
             this.tableLayoutPanel3.Controls.Add(this.richTextBox1, 0, 0);
             this.tableLayoutPanel3.Controls.Add(this.listView2, 1, 0);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(4, 4);
-            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 1;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(484, 364);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(363, 297);
             this.tableLayoutPanel3.TabIndex = 2;
             // 
             // richTextBox1
@@ -151,11 +145,10 @@
             this.richTextBox1.BackColor = System.Drawing.Color.Honeydew;
             this.richTextBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.richTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBox1.Location = new System.Drawing.Point(4, 4);
-            this.richTextBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.richTextBox1.Location = new System.Drawing.Point(3, 3);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.ReadOnly = true;
-            this.richTextBox1.Size = new System.Drawing.Size(113, 356);
+            this.richTextBox1.Size = new System.Drawing.Size(84, 291);
             this.richTextBox1.TabIndex = 0;
             this.richTextBox1.Text = "Vs - Mo\nHs\nNs\nVs - Di\nHs\nNs\nVs - Mi\nHs\nNs\nVs - Do\nHs\nNs\nVs - Fr\nHs\nNs";
             // 
@@ -166,10 +159,9 @@
             this.listView2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.listView2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listView2.FullRowSelect = true;
-            this.listView2.Location = new System.Drawing.Point(125, 4);
-            this.listView2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.listView2.Location = new System.Drawing.Point(93, 3);
             this.listView2.Name = "listView2";
-            this.listView2.Size = new System.Drawing.Size(355, 356);
+            this.listView2.Size = new System.Drawing.Size(267, 291);
             this.listView2.TabIndex = 1;
             this.listView2.UseCompatibleStateImageBehavior = false;
             this.listView2.View = System.Windows.Forms.View.List;
@@ -188,12 +180,11 @@
             this.tableLayoutPanel6.Controls.Add(this.button5, 0, 0);
             this.tableLayoutPanel6.Controls.Add(this.button6, 1, 0);
             this.tableLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel6.Location = new System.Drawing.Point(4, 376);
-            this.tableLayoutPanel6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel6.Location = new System.Drawing.Point(3, 306);
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
             this.tableLayoutPanel6.RowCount = 1;
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel6.Size = new System.Drawing.Size(484, 176);
+            this.tableLayoutPanel6.Size = new System.Drawing.Size(363, 144);
             this.tableLayoutPanel6.TabIndex = 3;
             // 
             // button5
@@ -201,23 +192,22 @@
             this.button5.BackColor = System.Drawing.Color.DarkSeaGreen;
             this.button5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(4, 4);
-            this.button5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button5.Location = new System.Drawing.Point(3, 3);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(234, 168);
+            this.button5.Size = new System.Drawing.Size(175, 138);
             this.button5.TabIndex = 0;
             this.button5.Text = "Speise austauschen";
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button6
             // 
             this.button6.BackColor = System.Drawing.Color.DarkSeaGreen;
             this.button6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.Location = new System.Drawing.Point(246, 4);
-            this.button6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button6.Location = new System.Drawing.Point(184, 3);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(234, 168);
+            this.button6.Size = new System.Drawing.Size(176, 138);
             this.button6.TabIndex = 1;
             this.button6.Text = "Wochenmenü zusammenstellen";
             this.button6.UseVisualStyleBackColor = false;
@@ -239,16 +229,14 @@
             this.tableLayoutPanel1.Controls.Add(this.button2, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.button3, 2, 0);
             this.tableLayoutPanel1.Controls.Add(this.button4, 7, 0);
-            this.tableLayoutPanel1.Controls.Add(this.button7, 3, 0);
-            this.tableLayoutPanel1.Controls.Add(this.button8, 4, 0);
+            this.tableLayoutPanel1.Controls.Add(this.button8, 3, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.tableLayoutPanel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1333, 142);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1000, 115);
             this.tableLayoutPanel1.TabIndex = 4;
             this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
             // 
@@ -258,10 +246,9 @@
             this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button1.FlatAppearance.BorderColor = System.Drawing.Color.Green;
             this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.Location = new System.Drawing.Point(4, 4);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Location = new System.Drawing.Point(3, 3);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(158, 134);
+            this.button1.Size = new System.Drawing.Size(119, 109);
             this.button1.TabIndex = 0;
             this.button1.Text = "Hinzufügen";
             this.button1.UseVisualStyleBackColor = false;
@@ -273,10 +260,9 @@
             this.button2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button2.FlatAppearance.BorderColor = System.Drawing.Color.Green;
             this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.Location = new System.Drawing.Point(170, 4);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button2.Location = new System.Drawing.Point(128, 3);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(158, 134);
+            this.button2.Size = new System.Drawing.Size(119, 109);
             this.button2.TabIndex = 1;
             this.button2.Text = "Bearbeiten";
             this.button2.UseVisualStyleBackColor = false;
@@ -288,10 +274,9 @@
             this.button3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button3.FlatAppearance.BorderColor = System.Drawing.Color.Green;
             this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.Location = new System.Drawing.Point(336, 4);
-            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button3.Location = new System.Drawing.Point(253, 3);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(158, 134);
+            this.button3.Size = new System.Drawing.Size(119, 109);
             this.button3.TabIndex = 2;
             this.button3.Text = "Löschen";
             this.button3.UseVisualStyleBackColor = false;
@@ -303,29 +288,13 @@
             this.button4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.Gold;
-            this.button4.Location = new System.Drawing.Point(1166, 4);
-            this.button4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button4.Location = new System.Drawing.Point(878, 3);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(163, 134);
+            this.button4.Size = new System.Drawing.Size(119, 109);
             this.button4.TabIndex = 3;
             this.button4.Text = "Beenden";
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
-            // button7
-            // 
-            this.button7.BackColor = System.Drawing.Color.DarkSeaGreen;
-            this.button7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button7.FlatAppearance.BorderColor = System.Drawing.Color.Green;
-            this.button7.FlatAppearance.BorderSize = 0;
-            this.button7.Location = new System.Drawing.Point(502, 4);
-            this.button7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(158, 134);
-            this.button7.TabIndex = 4;
-            this.button7.Text = "Aktualisieren";
-            this.button7.UseVisualStyleBackColor = false;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // button8
             // 
@@ -334,9 +303,10 @@
             this.button8.FlatAppearance.BorderColor = System.Drawing.Color.Green;
             this.button8.FlatAppearance.BorderSize = 0;
             this.button8.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.button8.Location = new System.Drawing.Point(667, 3);
+            this.button8.Location = new System.Drawing.Point(377, 2);
+            this.button8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(160, 136);
+            this.button8.Size = new System.Drawing.Size(121, 111);
             this.button8.TabIndex = 5;
             this.button8.Text = "PDF";
             this.button8.UseVisualStyleBackColor = false;
@@ -344,12 +314,11 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1333, 706);
+            this.ClientSize = new System.Drawing.Size(1000, 574);
             this.Controls.Add(this.tableLayoutPanel4);
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form1";
             this.Text = "Speiseplan";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -382,7 +351,6 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         internal System.Windows.Forms.ListView listView1;
-        private System.Windows.Forms.Button button7;
         private System.Windows.Forms.ColumnHeader Speise;
         private System.Windows.Forms.Button button8;
     }

@@ -84,15 +84,16 @@ namespace Speiseplan2
                 
                 else if (button1.Text.Equals("Bearbeiten"))
                 {
+
                     string sql = "Update Speisen set Speise=?, Speisenart=? where Speise='" + Form1.f1.listView1.SelectedItems[0].SubItems[0].Text + "';";
                     cmd = new OleDbCommand();
                     cmd.CommandText = sql;
                     cmd.Parameters.Add(new OleDbParameter("Speise", textBox1.Text.ToString()));
                     cmd.Parameters.Add(new OleDbParameter("Speisenart", comboBox1.Text.ToString()));
                     da.executeQuery(cmd);
+                    System.Threading.Thread.Sleep(200);
                     Form1.f1.readSpeiseIntoList();
                     this.Close();
-                    Form1.f1.readSpeiseIntoList();
 
                 }
             }
